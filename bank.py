@@ -22,15 +22,6 @@ class Checking(Account):
 	def __init__( self, name, balance ):
 		super().__init__(name, balance, min_balance = -1000)
 
-x = Checking('Ahmed', 500)
-x.deposite(400)
-x.statment()
-
-x.withdraw(400)
-x.statment()
-
-x.withdraw(800)
-x.statment()
-
-x.withdraw(701)
-x.statment()
+class Saving(Account):
+	def __init__( self, name, balance ):
+		super().__init__(name, balance, min_balance = 0)
