@@ -25,3 +25,4 @@ class Checking(Account):
 class Saving(Account):
 	def __init__( self, name, balance ):
 		super().__init__(name, balance, min_balance = 0)
+
